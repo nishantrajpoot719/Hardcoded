@@ -1,3 +1,4 @@
+from flask import Flask, request, jsonify
 import random
 import json
 
@@ -19,5 +20,18 @@ output3 = {
     "Top Combos": ["Taaza Pudina Masala Chaach & Muesli","Mango Yogurt & Muesli and Flakes - Muesli","Mango Lassi & Muesli"]
 }
 
-output = [output1, output2, output3]
-print(json.dumps(random.choice(output), indent=4))
+app = Flask(__name__)
+
+@app.route("/", methods=["GET"])
+def running():
+    return "Welcome to the Must Duplicate API!"
+
+@app.route("/result", methods=["POST","GET"])
+def result():
+    output = [output1, output2, output3]
+    return jsonify(random.choice(output))
+
+
+if __name__ == "__main__":
+    app.run(debug = True)
+    
