@@ -3,9 +3,9 @@ import random
 
 output1 = {
     "Emotion" : "Anxious",
-    "Top Products" : [{"Name" : "Taaza Jeera Chaach", "Size" : "250 ml", "Discount" : "28.5", "Price" : "30", "Link" : ""}, 
-    {"Name" : "Dark Chocolate 55% - Nuts Infused", "Size" : "17 gm", "Discount" : "57", "Price" : "63", "Link" : ""}, 
-    {"Name" : "Roasted Makhana - Cheese", "Size" : "25 gm", "Discount" : "67", "Price" : "74", "Link" : ""}],
+    "Top Products" : [{"Name" : "Taaza Jeera Chaach", "Size" : "250 ml", "Discount" : "28.5", "Price" : "30", "Link" : "https://jiffktocmulaasqyzktz.supabase.co/storage/v1/object/public/user-input/FlutterImages/taaza%20jeera%20chach.png"}, 
+    {"Name" : "Dark Chocolate 55% - Nuts Infused", "Size" : "17 gm", "Discount" : "57", "Price" : "63", "Link" : "https://jiffktocmulaasqyzktz.supabase.co/storage/v1/object/public/user-input/FlutterImages/dark%20chocolate.png"}, 
+    {"Name" : "Roasted Makhana - Cheese", "Size" : "25 gm", "Discount" : "67", "Price" : "74", "Link" : "https://jiffktocmulaasqyzktz.supabase.co/storage/v1/object/public/user-input/FlutterImages/roasted%20makhana.png"}],
     "Top Combos" : [{"Quote" : "Energetic Start", "Name" : "Chocolate Muesli & Milk", "Discount" : "285", "Link1" : "", "Link2" : ""},
     {"Quote" : "Tangy Filler", "Name" :"Malabar Parata & Pickles", "Discount" : "180", "Link1" : "", "Link2" : ""}, 
     {"Quote" : "5 in 1 magic", "Name" : "Potato Chips - 5 flavours", "Discount" : "36/pack", "Link1" : "", "Link2" : ""}]
