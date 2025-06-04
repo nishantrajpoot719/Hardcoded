@@ -3,20 +3,32 @@ import random
 
 output1 = {
     "Emotion" : "Anxious",
-    "Products" : ["Taaza Jeera Chaach", "Dark Chocolate 55% - Nuts Infused", "Roasted Makhana - Cheese"],
-    "Combos" : ["Mango Yogurt & Muesli and Flakes - Chocolate Muesli", "Malabar Parata & Pickles", "Chips - Magic Masala - Potato Chips & No Maida Puffs - Disney Cream & Onion Puffs"]
+    "Top Products" : [{"Name" : "Taaza Jeera Chaach", "Size" : "250 ml", "Discount" : "28.5", "Price" : "30", "Link" : ""}, 
+    {"Name" : "Dark Chocolate 55% - Nuts Infused", "Size" : "17 gm", "Discount" : "57", "Price" : "63", "Link" : ""}, 
+    {"Name" : "Roasted Makhana - Cheese", "Size" : "25 gm", "Discount" : "67", "Price" : "74", "Link" : ""}],
+    "Top Combos" : [{"Quote" : "Energetic Start", "Name" : "Chocolate Muesli & Milk", "Discount" : "285", "Link1" : "", "Link2" : ""},
+    {"Quote" : "Tangy Filler", "Name" :"Malabar Parata & Pickles", "Discount" : "180", "Link1" : "", "Link2" : ""}, 
+    {"Quote" : "5 in 1 magic", "Name" : "Potato Chips - 5 flavours", "Discount" : "36/pack", "Link1" : "", "Link2" : ""}]
 }
 
 output2 = {
     "Emotion": "Excited",
-    "Products": ["Roasted Makhana - Cheese","Taaza Jeera Chaach","Spicy Boondi"],
-    "Combos": ["Malabar Parata & Pickles","Taaza Jeera Chaach & Malabar Parata","Spicy Boondi & Malabar Parata"]
+    "Top Products": [{"Name" : "Roasted Makhana - Cheese", "Size" : "25 gm", "Discount" : "67", "Price" : "74", "Link" : ""},
+    {"Name" : "Taaza Jeera Chaach", "Size" : "250 ml", "Discount" : "28.5", "Price" : "30", "Link" : ""},
+    {"Name" : "Spicy Boondi", "Size" : "120 gm", "Discount" : "61", "Price" : "68", "Link" : ""}],
+    "Top Combos": [{"Quote" : "Tangy Filler", "Name" :"Malabar Parata & Pickles", "Discount" : "180", "Link1" : "", "Link2" : ""}, 
+    {"Quote" : "Heatwave Killer", "Name" : "Taaza Jeera Chaach & Malabar Parata", "Discount" : "130", "Link1" : "", "Link2" : ""},
+    {"Quote" : "5 in 1 magic", "Name" : "Potato Chips - 5 flavours", "Discount" : "36/pack", "Link1" : "", "Link2" : ""}]
 }
 
 output3 = {
     "Emotion": "Content",
-    "Products": ["Taaza Pudina Masala Chaach","Mango Yogurt","Mango Lassi"],
-    "Combos": ["Taaza Pudina Masala Chaach & Muesli","Mango Yogurt & Muesli and Flakes - Muesli","Mango Lassi & Muesli"]
+    "Top Products": [{"Name" : "Taaza Pudina Masala Chaach", "Size" : "250 ml", "Discount" : "28.5", "Price" : "30", "Link" : ""},
+    {"Name" : "Mango Yogurt", "Size" : "85 gm", "Discount" : "37", "Price" : "39", "Link" : ""},
+    {"Name" : "Mango Lassi", "Size" : "140 ml", "Discount" : "42", "Price" : "44.5", "Link" : ""}],
+    "Top Combos": [{"Quote" : "Energetic Start", "Name" : "Chocolate Muesli & Milk", "Discount" : "285", "Link1" : "", "Link2" : ""},
+    {"Quote" : "Tangy Filler", "Name" :"Malabar Parata & Pickles", "Discount" : "180", "Link1" : "", "Link2" : ""}, 
+    {"Quote" : "5 in 1 magic", "Name" : "Potato Chips - 5 flavours", "Discount" : "36/pack", "Link1" : "", "Link2" : ""}]
 }
 
 app = Flask(__name__)
@@ -33,4 +45,3 @@ def result():
 
 if __name__ == "__main__":
     app.run(debug = True)
-    
