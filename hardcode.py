@@ -1,6 +1,5 @@
-from flask import Flask, request, jsonify
+from flask import Flask, jsonify
 import random
-import json
 
 output1 = {
     "Emotion" : "Anxious",
