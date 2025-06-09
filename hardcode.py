@@ -39,7 +39,8 @@ def running():
 
 @app.route("/result", methods=["POST","GET"])
 def result():
-    output = [output1, output2, output3]
+    # output = [output1, output2, output3]
+    output = [output1, output3]
     return jsonify(random.choice(output))
 
 
